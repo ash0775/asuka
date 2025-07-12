@@ -8,9 +8,9 @@ body {
     background-blend-mode: normal, normal, normal, normal;
 }
 
-/* header {
-    height: 100px;
-} */
+header {
+    margin: 0;
+} 
 
 .logo_title {
     position: fixed;
