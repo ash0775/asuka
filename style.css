@@ -128,6 +128,12 @@ body {
     border-radius: 50px;
 }
 
+.skill_lang,
+.skill_text,
+.about_text {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 /* スライド全体 */
 .swiper-slide {
     transition: transform 0.6s;
@@ -244,9 +250,7 @@ body {
     font-size: 1.5rem;
 }
 
-.skill_lang {
-    font-family: 'Noto Sans JP', sans-serif;
-}
+
 
 .skill_img img {
     border-radius: 50%;
@@ -282,6 +286,122 @@ body {
     margin-bottom: 0;
 }
 
+/* 問い合わせ */
+.contact {
+    margin: 80px 70px 0 70px;
+}
+
+.contact_title {
+    margin-bottom: 0;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 4.5rem;
+}
+
+.contact_line {
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.container {
+    /* max-width:600px; */
+    margin: 0 auto;
+    text-align: center;
+    /* -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:#FAFAFA; */
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+input:first-of-type {
+    margin-top: 50px;
+}
+
+input,
+textarea {
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    border: 1px solid #cecece;
+    background: #d7d7d7;
+    color: #FAFAFA;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 600px;
+}
+
+::-webkit-input-placeholder {
+    color: #FAFAFA;
+}
+
+:-moz-placeholder {
+    color: #FAFAFA;
+}
+
+::-moz-placeholder {
+    color: #FAFAFA;
+}
+
+:-ms-input-placeholder {
+    color: #FAFAFA;
+}
+
+.form_button {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #5fede6;
+    padding: 12px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #5fede6;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width: 30%;
+    color: #fff;
+}
+
+.form_button:hover,
+.form_button:hover {
+    background: #19a08c;
+}
+
+label.error {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 1em;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #d89c9c;
+    width: 80%;
+    margin: auto;
+    color: #FAFAFA;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
 
 /* スマホビュー */
 @media screen and (max-width: 390px) {
@@ -303,7 +423,7 @@ body {
         margin: 0 30px;
     }
 
-    .about {
+    .about,.contact {
         margin: 50px 30px 0 30px;
     }
 
@@ -311,20 +431,32 @@ body {
         padding: 100px 50px;
     }
 
+    .contact_title{
+        text-align: center;
+        font-size: 3.5rem;
+    }
 
+    .contact_line{
+        height: 10px;
+    }
+
+    input, textarea{
+        width: 100%;
+    }
 }
 
 /* タブレットビュー */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .about_img {
         margin-right: 0;
     }
 
-    .about_inner{
-          display: flex;
-  flex-direction: column;
-  align-items: center;
+    .about_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     .about_name,
     .about_text {
         text-align: center;
