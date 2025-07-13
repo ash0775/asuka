@@ -1,4 +1,4 @@
-jQuery(function ($) {
+$(function(){
   $('.menu').on('click', function () {
     $('.menu__line').toggleClass('active');
     $('.gnav').fadeToggle();
@@ -28,9 +28,9 @@ const swiper = new Swiper(".swiper", {
   }
 });
 
-  $(function() {
+ $(function() {
     // validate
-    $("#contact_form").validate({
+    $("#contact").validate({
         // Set the validation rules
         rules: {
             name: "required",

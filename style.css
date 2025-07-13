@@ -287,7 +287,7 @@ header {
 }
 
 /* 問い合わせ */
-.contact {
+.contact-section {
     margin: 80px 70px 0 70px;
 }
 
@@ -302,107 +302,107 @@ header {
 
 .contact_line {
     height: 15px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50px;
 }
 
 .container {
-    /* max-width:600px; */
-    margin: 0 auto;
-    text-align: center;
-    /* -webkit-border-radius:6px;
-  -moz-border-radius:6px;
-  border-radius:6px;
-  background-color:#FAFAFA; */
+  text-align:center;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
 }
 
 input {
-    margin-bottom: 10px;
+  margin-bottom:10px;
 }
-
 textarea {
-    height: 100px;
-    margin-bottom: 10px;
+  height:100px;
+  margin-bottom:10px;
 }
-
-input:first-of-type {
-    margin-top: 50px;
+input:first-of-type
+{
+  margin-top:35px;
 }
-
-input,
-textarea {
-    font-size: 1em;
-    padding: 15px 10px 10px;
-    font-family: 'Source Sans Pro', arial, sans-serif;
-    border: 1px solid #cecece;
-    background: #d7d7d7;
-    color: #FAFAFA;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 80%;
-    max-width: 600px;
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#FAFAFA;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
 }
-
 ::-webkit-input-placeholder {
-    color: #FAFAFA;
+   color: #FAFAFA;
 }
-
 :-moz-placeholder {
-    color: #FAFAFA;
+   color: #FAFAFA;  
 }
-
 ::-moz-placeholder {
-    color: #FAFAFA;
+   color: #FAFAFA; 
 }
-
-:-ms-input-placeholder {
-    color: #FAFAFA;
+:-ms-input-placeholder {  
+   color: #FAFAFA;  
 }
-
-.form_button {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    background-color: #5fede6;
-    padding: 12px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    border: 1px solid #5fede6;
-    -webkit-transition: .5s;
-    transition: .5s;
-    display: inline-block;
-    cursor: pointer;
-    width: 30%;
-    color: #fff;
+.cotact_submit {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#2ABCA7;
+  padding: 12px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
 }
-
-.form_button:hover,
-.form_button:hover {
-    background: #19a08c;
+.cotact_submit:hover, .cotact_submit:hover {
+  background:#19a08c;
 }
-
 label.error {
-    font-family: 'Source Sans Pro', arial, sans-serif;
-    font-size: 1em;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #d89c9c;
+    font-family:'Noto Sans JP', sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
     width: 80%;
-    margin: auto;
+    margin:auto;
     color: #FAFAFA;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
 }
 
+.message {
+    font-family:'Noto Sans JP', sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#2ABCA7;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
 /* スマホビュー */
 @media screen and (max-width: 390px) {
     .logo_title {
@@ -423,26 +423,23 @@ label.error {
         margin: 0 30px;
     }
 
-    .about,.contact {
+    .about,.contact-section {
         margin: 50px 30px 0 30px;
     }
 
     .about_inner {
         padding: 100px 50px;
     }
-
-    .contact_title{
-        text-align: center;
-        font-size: 3.5rem;
-    }
-
-    .contact_line{
-        height: 10px;
-    }
-
-    input, textarea{
-        width: 100%;
-    }
+.contact_title{
+    text-align: center;
+    font-size:3.5rem;
+}
+.contact_line{
+    height: 10px;
+}
+input, textarea{
+    width: 100%;
+}
 }
 
 /* タブレットビュー */
